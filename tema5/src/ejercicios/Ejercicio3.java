@@ -62,7 +62,7 @@ public class Ejercicio3 {
                     dias++;
                 }
             }else{
-                dias=calcularDiasMes(ano, i);
+                dias+=calcularDiasMes(ano, i);
             }
         }
         return dias;
