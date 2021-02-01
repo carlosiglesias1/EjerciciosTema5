@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * 5.3. Hacer una función llamada CalcularDiasMes que se le pase como parámetro
  * un año y un mes y devuelva los días que tiene ese mes, teniendo en cuenta los
- * años bisiestos. A continuación, realizar un programa al que se le introduzca
+ * anos bisiestos. A continuación, realizar un programa al que se le introduzca
  * una fecha y nos informe de los días pasados desde el 1 de enero de ese año
  * (no usar clases Java de fechas).
  */
@@ -13,13 +13,13 @@ public class Ejercicio3 {
     static int dia; 
     static int mes;
     static int ano;
-    static boolean esBisiesto (int año){
+    static boolean esBisiesto (int ano){
         boolean bisiesto = false;
-        if (año % 4 == 0 && año % 100 != 0 || año % 400 == 0)
+        if (ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0)
             bisiesto=true;
         return bisiesto;
     }
-    static int calcularDiasMes (int año, int mes){
+    static int calcularDiasMes (int ano, int mes){
         int dias = 0;
         switch (mes){
             case 1:
@@ -38,7 +38,7 @@ public class Ejercicio3 {
                 dias = 30;
                 break;
             case 2:
-                if (esBisiesto(año))
+                if (esBisiesto(ano))
                     dias = 29;
                 else
                     dias = 28;
@@ -62,9 +62,7 @@ public class Ejercicio3 {
                     dias++;
                 }
             }else{
-                for (int j = 1; j < calcularDiasMes(ano, i);j++) {
-                    dias++;
-                }
+                dias=calcularDiasMes(ano, i);
             }
         }
         return dias;
