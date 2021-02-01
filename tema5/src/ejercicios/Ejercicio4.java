@@ -7,5 +7,9 @@ package ejercicios;
  */
 
 public class Ejercicio4 {
-
+    static int diasComprendidos(){
+        int dias = 0;
+        
+        return dias;
+    }
 }
