@@ -1,5 +1,7 @@
 package ejercicios;
 
+import java.util.Scanner;
+
 /**
  * 5.4. Partiendo de la función del programa anterior, hacer un programa al que
  * se le introduzcan dos fechas del mismo año y nos informe de los días
@@ -14,5 +16,10 @@ public class Ejercicio4 {
         dias = Ejercicio3.contarDias(fecha1)-Ejercicio3.contarDias(fecha);
         
         return dias;
+    }
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System.in);
+        String cadena = "";
+        
     }
 }
