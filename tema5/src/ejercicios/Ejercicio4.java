@@ -5,10 +5,13 @@ package ejercicios;
  * se le introduzcan dos fechas del mismo año y nos informe de los días
  * comprendidos entre ellas (no usar clases Java de fechas)
  */
-
+/**
+ * días = contarDias(fecha mayor)-contarDias(fecha menor)
+ */
 public class Ejercicio4 {
-    static int diasComprendidos(){
+    static int diasComprendidos(String fecha, String fecha1){
         int dias = 0;
+        dias = Ejercicio3.contarDias(fecha1)-Ejercicio3.contarDias(fecha);
         
         return dias;
     }
