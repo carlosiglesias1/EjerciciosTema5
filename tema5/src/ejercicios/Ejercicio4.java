@@ -13,13 +13,20 @@ import java.util.Scanner;
 public class Ejercicio4 {
     static int diasComprendidos(String fecha, String fecha1){
         int dias = 0;
+        
         dias = Ejercicio3.contarDias(fecha1)-Ejercicio3.contarDias(fecha);
         
         return dias;
     }
     public static void main(String[] args) {
         Scanner teclado = new Scanner (System.in);
-        String cadena = "";
-        
+        String fecha = "";
+        String fecha1="";
+        System.out.print("Introduce una fecha: ");
+        fecha = teclado.nextLine();
+        System.out.print("Introduce la segunda fecha: ");
+        fecha1 = teclado.nextLine();
+        System.out.printf("Entre ambas fechas hay: %d",diasComprendidos(fecha, fecha1));
+        teclado.close();
     }
 }
