@@ -27,5 +27,6 @@ public class Ejercicio8 {
         System.out.println();
         numero1 = teclado.nextInt();
         System.out.println("De ambos números tiene más divisores el número "+compararDivisores(numero, numero1));
+        teclado.close();
     }
 }
