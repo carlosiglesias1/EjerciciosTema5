@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Ejercicio4 {
     
-    static int obtainYear(String fecha){
+    static int getYear(String fecha){
         int year = 0;
         year = Integer.parseInt(fecha.substring(fecha.lastIndexOf("/")+1));
         return year;
@@ -24,8 +24,8 @@ public class Ejercicio4 {
         int ano2 = 0;
         
         //OBTENGO LOS AÑOS DE AMBAS FECHAS
-        ano1 = obtainYear(fecha1);
-        ano2 = obtainYear(fecha2);
+        ano1 = getYear(fecha1);
+        ano2 = getYear(fecha2);
         
         //Cuento los días de cada año entre los dos años
         if(ano1<ano2){
@@ -56,7 +56,7 @@ public class Ejercicio4 {
         fecha = teclado.nextLine();
         System.out.print("Introduce la segunda fecha: ");
         fecha1 = teclado.nextLine();
-        System.out.printf("Entre ambas fechas hay: %d",diasComprendidos(fecha, fecha1));
+        System.out.printf("Entre ambas fechas hay %d dás",Math.abs(diasComprendidos(fecha, fecha1)));
         teclado.close();
     }
 }
