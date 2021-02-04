@@ -9,13 +9,15 @@ package ejercicios;
  */
 
 public class Ejercicio9 {
-    public float saldo = 0;
-
-    public void ingresar(float cantidad) {
+    static float saldo = 12000;
+    protected Ejercicio9 (){
+    }
+    
+    static void ingresar(float cantidad) {
         saldo += cantidad;
     }
 
-    public void retirar(float cantidad) {
+    static void retirar(float cantidad) {
         if (saldo-cantidad>=0)
             saldo -= cantidad;
         else
