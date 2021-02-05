@@ -35,7 +35,7 @@ public class Ejercicio4 {
         // INTRODUZCA LAS FECHAS DEL REVÉS, EL PROGRAMA CALCULARÁ CORRECTAMENTE LOS DÍAS
         // LA FECHA MÁS GRANDE IRÁ EN LA PRIMERA POSICIÓN
 
-        String date[] = new String[2];
+        String [] date  = new String[2];
         if (getYear(date1) > getYear(date2) || getYear(date1) == getYear(date2) && getMonth(date1) > getMonth(date2)
                 || getMonth(date1) == getMonth(date2) && getDay(date1) > getDay(date2)) {
             date[0] = date1;
