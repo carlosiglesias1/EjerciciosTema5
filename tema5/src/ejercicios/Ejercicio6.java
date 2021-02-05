@@ -12,7 +12,7 @@ public class Ejercicio6 {
     static int cantidadDivisores(int numero) {
         int cantidad = 0;
         if (numero > 0) {
-            for (int i = 1; i < numero / 2; i++) {
+            for (int i = 1; i <= numero / 2; i++) {
                 if (numero % i == 0)
                     cantidad++;
             }
