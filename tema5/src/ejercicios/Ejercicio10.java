@@ -5,9 +5,7 @@ package ejercicios;
  */
 
 public class Ejercicio10 {
-    static float ingresar(float saldo, float increm) {
-        return saldo + increm;
-    }
+    
 
     public static void main(String[] args) {
         float saldo = 500f;
@@ -16,5 +14,11 @@ public class Ejercicio10 {
             System.out.println("Ya tienes más de 1000 euros: " + saldo);
         else
             System.out.println("No tienes más de 1000 euros: " + saldo);
+        System.out.printf("El código es erróneo debido a que evalúas si al ingresar 400 euros más%n"+
+                            "llgaría a tener más de 1000 euros, pero imprimes un mensaje diciendo que %n"+
+                            "tiene más de mil euros, cuando aún no los ha ingresado.");
+    }
+    static float ingresar(float saldo, float increm) {
+        return saldo + increm;
     }
 }
